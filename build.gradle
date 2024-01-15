@@ -21,6 +21,33 @@ dependencies {
 	implementation 'org.springframework.kafka:spring-kafka'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.kafka:spring-kafka-test'
+	// https://mvnrepository.com/artifact/com.google.cloud/spring-cloud-gcp-autoconfigure
+//	implementation group: 'com.google.cloud', name: 'spring-cloud-gcp-autoconfigure', version: '5.0.0'
+	// https://mvnrepository.com/artifact/org.projectlombok/lombok
+	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.30'
+	// https://mvnrepository.com/artifact/com.google.cloud/google-cloud-vision
+//	implementation group: 'com.google.cloud', name: 'google-cloud-vision', version: '3.31.0'
+	// https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j
+	implementation group: 'net.sourceforge.tess4j', name: 'tess4j', version: '5.10.0'
+	// https://mvnrepository.com/artifact/com.itextpdf/itextpdf
+	implementation group: 'com.itextpdf', name: 'itextpdf', version: '5.5.13.3'
+	// https://mvnrepository.com/artifact/com.itextpdf.tool/xmlworker
+	implementation group: 'com.itextpdf.tool', name: 'xmlworker', version: '5.5.13.3'
+	// https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+	implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.2.5'
+	// https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad
+	implementation group: 'org.apache.poi', name: 'poi-scratchpad', version: '5.2.5'
+
+	//LOMBOK Dependencies
+	annotationProcessor 'org.projectlombok:lombok'
+	compileOnly 'org.projectlombok:lombok'
+	testAnnotationProcessor 'org.projectlombok:lombok'
+	testCompileOnly 'org.projectlombok:lombok'
+
+
+
+
+
 }
 
 tasks.named('test') {
